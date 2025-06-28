@@ -28,8 +28,12 @@ const Users = () => {
                 <td>{user.Email}</td>
                 <td>{user.Age}</td>
                 <td>
-                  <button className="btn btn-primary me-2">Edit</button>
-                  <button className="btn btn-danger">Delete</button>
+                  <Link to={"/update"} className="btn btn-success">
+                    <button className="btn btn-success me-2">Edit</button>
+                  </Link>
+                  <Link to={"/delete"} className="btn btn-danger">
+                    <button className="btn btn-danger">Delete</button>
+                  </Link>
                 </td>
               </tr>
             ))}
